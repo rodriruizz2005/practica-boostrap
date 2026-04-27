@@ -1,47 +1,193 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    <title>Contacto - TurismoJujuy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/style.css">
-        <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">TurismoJujuy</a>
+            <a class="navbar-brand" href="index.html">🌍 TurismoJujuy</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
+            <!-- Menú colapsable -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="destinos.html">destinos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="agencia.html">agencia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="blog.html">blog</a>
-                    </li>
-                     <li class="nav-item">
-                        <a class="nav-link active" href="contacto.html">contaco</a>
-                    </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="precios.html">precios</a>
-                    </li>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="destinos.html">Destinos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="agencia.html">Agencia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="precios.html">Precios</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <script> src="js/animaciones.js" </script>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="container">
+            <h1>Contáctanos</h1>
+            <p>Estamos aquí para ayudarte a planificar tu próxima aventura</p>
+        </div>
+    </div>
+
+    <!-- Contacto -->
+    <section class="section">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Información de Contacto -->
+                <div class="col-md-6">
+                    <h3 class="mb-4">Información de Contacto</h3>
+                    
+                    <div class="mb-4">
+                        <h5>📍 Dirección</h5>
+                        <p>Calle Principal 123<br>San Salvador de Jujuy, 4600<br>Provincia de Jujuy, Argentina</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h5>📞 Teléfono</h5>
+                        <p><strong>Principal:</strong> +54 388 123-4567<br><strong>WhatsApp:</strong> +54 388 987-6543</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h5>✉️ Email</h5>
+                        <p><strong>General:</strong> info@turismojujuy.com<br><strong>Reservas:</strong> reservas@turismojujuy.com</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h5>⏰ Horario de Atención</h5>
+                        <p><strong>Lunes a Viernes:</strong> 9:00 AM - 6:00 PM<br><strong>Sábados:</strong> 10:00 AM - 4:00 PM<br><strong>Domingos:</strong> Cerrado</p>
+                    </div>
+
+                </div>
+
+                <!-- Formulario de Contacto -->
+                <div class="col-md-6">
+                    <h3 class="mb-4">Envíanos tu Mensaje</h3>
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre Completo</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" id="telefono">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="asunto" class="form-label">Asunto</label>
+                            <input type="text" class="form-control" id="asunto" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="tipo" class="form-label">Tipo de Consulta</label>
+                            <select class="form-select" id="tipo" required>
+                                <option value="">Seleccionar...</option>
+                                <option value="reserva">Reserva de Tour</option>
+                                <option value="informacion">Información General</option>
+                                <option value="personalizacion">Tour Personalizado</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="5" required></textarea>
+                        </div>
+
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="terminos" required>
+                            <label class="form-check-label" for="terminos">
+                                Acepto los términos y condiciones
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Redes Sociales -->
+    <section class="section bg-light">
+        <div class="container text-center">
+            <h3 class="mb-4">Síguenos en Redes Sociales</h3>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="https://facebook.com" class="btn btn-primary btn-lg">Facebook</a>
+                <a href="https://twitter.com" class="btn btn-info btn-lg">Twitter</a>
+                <a href="https://instagram.com" class="btn btn-danger btn-lg">Instagram</a>
+                <a href="https://youtube.com" class="btn btn-danger btn-lg">YouTube</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>📍 Contacto</h5>
+                    <p>Dirección: Calle Principal 123, San Salvador de Jujuy</p>
+                    <p>Teléfono: +54 388 123-4567</p>
+                    <p>Email: info@turismojujuy.com</p>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h5>📧 Newsletter</h5>
+                    <form>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Tu email" required>
+                        </div>
+                        <button type="submit" class="btn btn-warning w-100">Suscribirse</button>
+                    </form>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h5>🌐 Redes Sociales</h5>
+                    <p>
+                        <a href="https://facebook.com" class="text-white text-decoration-none">Facebook</a> |
+                        <a href="https://twitter.com" class="text-white text-decoration-none">Twitter</a> |
+                        <a href="https://instagram.com" class="text-white text-decoration-none">Instagram</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-12">
+                    <iframe title="Mapa de Jujuy"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0!2d-65.3!3d-24.2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDEyJzAwLjAiUyA2NcKwMTgnMDAuMCJX!5e0!3m2!1ses!2sar!4v1234567890"
+                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        width="100%" height="300"></iframe>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2026 TurismoJujuy. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/animaciones.js"></script>
 </body>
+
 </html>

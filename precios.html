@@ -1,47 +1,286 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    <title>Precios - TurismoJujuy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/style.css">
-        <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">TurismoJujuy</a>
+            <a class="navbar-brand" href="index.html">🌍 TurismoJujuy</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
+            <!-- Menú colapsable -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="destinos.html">destinos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="agencia.html">agencia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="blog.html">blog</a>
-                    </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">contaco</a>
-                    </li>
-                     <li class="nav-item">
-                        <a class="nav-link active" href="precios.html">precios</a>
-                    </li>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="destinos.html">Destinos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="agencia.html">Agencia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="precios.html">Precios</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <script> src="js/animaciones.js" </script>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="container">
+            <h1>Nuestros Precios</h1>
+            <p>Tarifas competitivas y paquetes especializados</p>
+        </div>
+    </div>
+
+    <!-- Tabla de Precios -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title mb-5">Precios por Destino</h2>
+            <div class="table-responsive">
+                <table class="table table-striped table-hover">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Destino</th>
+                            <th>Duración</th>
+                            <th>Dificultad</th>
+                            <th>Precio por Persona</th>
+                            <th>Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Serranías del Hornocal</strong></td>
+                            <td>2-3 días</td>
+                            <td><span class="badge bg-danger">Media-Alta</span></td>
+                            <td><strong>$850 ARS</strong></td>
+                            <td><a href="contacto.html" class="btn btn-sm btn-primary">Reservar</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cataratas de Hornocal</strong></td>
+                            <td>1 día</td>
+                            <td><span class="badge bg-success">Baja</span></td>
+                            <td><strong>$350 ARS</strong></td>
+                            <td><a href="contacto.html" class="btn btn-sm btn-primary">Reservar</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Purmamarca</strong></td>
+                            <td>1 día</td>
+                            <td><span class="badge bg-success">Baja</span></td>
+                            <td><strong>$300 ARS</strong></td>
+                            <td><a href="contacto.html" class="btn btn-sm btn-primary">Reservar</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Salinas Grandes</strong></td>
+                            <td>1 día</td>
+                            <td><span class="badge bg-success">Baja</span></td>
+                            <td><strong>$400 ARS</strong></td>
+                            <td><a href="contacto.html" class="btn btn-sm btn-primary">Reservar</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tilcara</strong></td>
+                            <td>1 día</td>
+                            <td><span class="badge bg-success">Baja</span></td>
+                            <td><strong>$300 ARS</strong></td>
+                            <td><a href="contacto.html" class="btn btn-sm btn-primary">Reservar</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Maimará</strong></td>
+                            <td>Medio día</td>
+                            <td><span class="badge bg-success">Muy Baja</span></td>
+                            <td><strong>$200 ARS</strong></td>
+                            <td><a href="contacto.html" class="btn btn-sm btn-primary">Reservar</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Paquetes Especiales -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title mb-5">Paquetes Especiales</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-primary">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="card-title mb-0">Pack Aventura</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                <strong>Incluye:</strong>
+                            </p>
+                            <ul class="list-unstyled">
+                                <li>✓ Serranías del Hornocal (2-3 días)</li>
+                                <li>✓ Cataratas de Hornocal (1 día)</li>
+                                <li>✓ Alojamiento 3 noches</li>
+                                <li>✓ Transporte incluido</li>
+                                <li>✓ Guía especializado</li>
+                            </ul>
+                            <hr>
+                            <p class="text-center"><strong class="fs-5">$1,800 ARS</strong></p>
+                            <a href="contacto.html" class="btn btn-primary w-100">Contratar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-warning" style="border-width: 3px;">
+                        <div class="card-header bg-warning text-dark">
+                            <h5 class="card-title mb-0">⭐ Pack Premium</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                <strong>Incluye:</strong>
+                            </p>
+                            <ul class="list-unstyled">
+                                <li>✓ Todos los destinos principales (5 días)</li>
+                                <li>✓ Alojamiento 5 noches en hoteles 4*</li>
+                                <li>✓ Transporte privado</li>
+                                <li>✓ Guía VIP + fotógrafo profesional</li>
+                                <li>✓ Comidas incluidas</li>
+                            </ul>
+                            <hr>
+                            <p class="text-center"><strong class="fs-5">$3,500 ARS</strong></p>
+                            <a href="contacto.html" class="btn btn-warning w-100">Contratar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-success">
+                        <div class="card-header bg-success text-white">
+                            <h5 class="card-title mb-0">Pack Familia</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                <strong>Incluye:</strong>
+                            </p>
+                            <ul class="list-unstyled">
+                                <li>✓ Destinos aptos para todas las edades</li>
+                                <li>✓ Alojamiento 3 noches</li>
+                                <li>✓ Transporte cómodo</li>
+                                <li>✓ Actividades entretenidas para niños</li>
+                                <li>✓ Seguro de viaje incluido</li>
+                            </ul>
+                            <hr>
+                            <p class="text-center"><strong class="fs-5">$1,200 ARS</strong></p>
+                            <a href="contacto.html" class="btn btn-success w-100">Contratar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Información de Precios -->
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>¿Qué está Incluido?</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">✓ Transporte desde punto de encuentro</li>
+                        <li class="list-group-item">✓ Guía turístico profesional</li>
+                        <li class="list-group-item">✓ Entrada a atracciones turísticas</li>
+                        <li class="list-group-item">✓ Seguro de viaje básico</li>
+                        <li class="list-group-item">✓ Bebidas y snacks (en tours de día completo)</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>¿Qué NO está Incluido?</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">✗ Comidas (a menos que se especifique)</li>
+                        <li class="list-group-item">✗ Vuelos internacionales</li>
+                        <li class="list-group-item">✗ Gastos personales</li>
+                        <li class="list-group-item">✗ Propinas (opcionales pero bienvenidas)</li>
+                        <li class="list-group-item">✗ Equipo especializado (mochilas, tiendas, etc.)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Descuentos -->
+    <section class="section bg-light">
+        <div class="container text-center">
+            <h2 class="section-title">Descuentos Especiales</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="alert alert-success" role="alert">
+                        <h5>Grupos de 10+ Personas</h5>
+                        <p class="mb-0"><strong>Descuento: 15%</strong></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="alert alert-info" role="alert">
+                        <h5>Estudiantes y Jubilados</h5>
+                        <p class="mb-0"><strong>Descuento: 10%</strong> (con acreditación)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>📍 Contacto</h5>
+                    <p>Dirección: Calle Principal 123, San Salvador de Jujuy</p>
+                    <p>Teléfono: +54 388 123-4567</p>
+                    <p>Email: info@turismojujuy.com</p>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h5>📧 Newsletter</h5>
+                    <form>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Tu email" required>
+                        </div>
+                        <button type="submit" class="btn btn-warning w-100">Suscribirse</button>
+                    </form>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h5>🌐 Redes Sociales</h5>
+                    <p>
+                        <a href="https://facebook.com" class="text-white text-decoration-none">Facebook</a> |
+                        <a href="https://twitter.com" class="text-white text-decoration-none">Twitter</a> |
+                        <a href="https://instagram.com" class="text-white text-decoration-none">Instagram</a>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-12">
+                    <iframe title="Mapa de Jujuy"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0!2d-65.3!3d-24.2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDEyJzAwLjAiUyA2NcKwMTgnMDAuMCJX!5e0!3m2!1ses!2sar!4v1234567890"
+                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        width="100%" height="300"></iframe>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2026 TurismoJujuy. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/animaciones.js"></script>
 </body>
+
 </html>

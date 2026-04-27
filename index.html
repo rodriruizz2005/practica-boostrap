@@ -4,58 +4,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home/tp3</title>
+    <title>Home - TurismoJujuy</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">TurismoJujuy</a>
+            <a class="navbar-brand" href="index.html">🌍 TurismoJujuy</a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
+            <!-- Menú colapsable -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="destinos.html">destinos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="agencia.html">agencia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="blog.html">blog</a>
-                    </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">contaco</a>
-                    </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="precios.html">precios</a>
-                    </li>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="destinos.html">Destinos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="agencia.html">Agencia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="precios.html">Precios</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <footer>
-        <div class="card">
-            <div class="card-header">
-                Featured
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="container">
+            <h1>Descubre la Belleza de Jujuy</h1>
+            <p>Explora destinos turísticos increíbles y vive experiencias inolvidables</p>
+            <a href="destinos.html" class="btn btn-primary btn-lg">Ver Destinos</a>
+            <a href="contacto.html" class="btn btn-secondary btn-lg ms-2">Contactarnos</a>
+        </div>
+    </div>
+
+    <!-- Sección de Destinos Destacados -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Destinos Populares</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400"
+                            class="card-img-top" alt="Montaña">
+                        <div class="card-body">
+                            <h5 class="card-title">Serranías del Hornocal</h5>
+                            <p class="card-text">Descubre la famosa "Paleta del Pintor" con sus colores naturales únicos
+                                y vistas espectaculares.</p>
+                            <a href="destinos.html" class="btn btn-primary">Más Información</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400"
+                            class="card-img-top" alt="Catarata">
+                        <div class="card-body">
+                            <h5 class="card-title">Cataratas de Hornocal</h5>
+                            <p class="card-text">Hermosas cascadas rodeadas de naturaleza virgen. Un paraíso para los
+                                amantes del trekking.</p>
+                            <a href="destinos.html" class="btn btn-primary">Más Información</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400"
+                            class="card-img-top" alt="Pueblo">
+                        <div class="card-body">
+                            <h5 class="card-title">Purmamarca</h5>
+                            <p class="card-text">El encantador pueblo con el famoso Cerro de los Siete Colores. Ideal
+                                para compras artesanales.</p>
+                            <a href="destinos.html" class="btn btn-primary">Más Información</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <div class="row g-4">
+                <div class="col-md-4 text-center">
+                    <div class="p-3">
+                        <h4 class="mb-3">🚗 Transporte</h4>
+                        <p>Vehículos cómodos y seguros para tus desplazamientos por toda la provincia.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="p-3">
+                        <h4 class="mb-3">🏨 Alojamiento</h4>
+                        <p>Hospedajes seleccionados que garantizan comodidad y una experiencia memorable.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="p-3">
+                        <h4 class="mb-3">🗺️ Tours Guiados</h4>
+                        <p>Guías expertos que te mostrarán los mejores lugares y historias de Jujuy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Testimonios -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Lo Que Nuestros Clientes Dicen</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="testimonial">
+                        <p class="testimonial-text">"Fue la mejor experiencia de viaje que he tenido. El equipo fue muy
+                            profesional y atento."</p>
+                        <p class="testimonial-author">- María García</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonial">
+                        <p class="testimonial-text">"Recomiendo 100% a TurismoJujuy. Conocimos lugares increíbles y nos
+                            trataron de maravilla."</p>
+                        <p class="testimonial-author">- Carlos López</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonial">
+                        <p class="testimonial-text">"La atención al cliente fue excepcional. Volvería sin dudarlo en mi
+                            próxima visita."</p>
+                        <p class="testimonial-author">- Ana Martínez</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonial">
+                        <p class="testimonial-text">"Precios justos y servicios de calidad. Definitivamente nuestro
+                            operador favorito."</p>
+                        <p class="testimonial-author">- Roberto Sánchez</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>📍 Contacto</h5>
+                    <p>Dirección: Calle Principal 123, San Salvador de Jujuy</p>
+                    <p>Teléfono: +54 388 123-4567</p>
+                    <p>Email: info@turismojujuy.com</p>
+                    <p>Horario: Lunes a Viernes, 9:00 AM - 6:00 PM</p>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h5>📧 Newsletter</h5>
+                    <form>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Tu email" required>
+                        </div>
+                        <button type="submit" class="btn btn-warning w-100">Suscribirse</button>
+                    </form>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h5>🌐 Redes Sociales</h5>
+                    <p>
+                        <a href="https://facebook.com" class="text-white text-decoration-none">Facebook</a> |
+                        <a href="https://twitter.com" class="text-white text-decoration-none">Twitter</a> |
+                        <a href="https://instagram.com" class="text-white text-decoration-none">Instagram</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-12">
+                    <iframe title="Mapa de Jujuy"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0!2d-65.3!3d-24.2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDEyJzAwLjAiUyA2NcKwMTgnMDAuMCJX!5e0!3m2!1ses!2sar!4v1234567890"
+                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        width="100%" height="300"></iframe>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2026 TurismoJujuy. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
-    <script> src="js/animaciones.js" </script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/animaciones.js"></script>
 </body>
 
 </html>

@@ -1,47 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Agencia - TurismoJujuy</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <title>agencia</title>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">TurismoJujuy</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            <a class="navbar-brand" href="index.html">🌍 TurismoJujuy</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
+            <!-- Menú colapsable -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="destinos.html">destinos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="agencia.html">agencia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="blog.html">blog</a>
-                    </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">contaco</a>
-                    </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="precios.html">precios</a>
-                    </li>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="destinos.html">Destinos</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="agencia.html">Agencia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="precios.html">Precios</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <script> src="js/animaciones.js" </script>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="container">
+            <h1>Sobre Nuestra Agencia</h1>
+            <p>Más de 10 años brindando experiencias inolvidables en Jujuy</p>
+        </div>
+    </div>
+
+    <!-- Acerca de -->
+    <section class="section">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-md-6">
+                    <h2 class="section-title">¿Quiénes Somos?</h2>
+                    <p class="lead">TurismoJujuy es una agencia de viajes especializada en turismo de aventura y cultural en la provincia de Jujuy, Argentina. Con más de una década de experiencia, ofrecemos tours personalizados y auténticos.</p>
+                    <p>Nuestro equipo está formado por profesionales apasionados por el turismo, guías certificados y personal dedicado a hacer de tu viaje una experiencia memorable.</p>
+                    <a href="contacto.html" class="btn btn-primary">Contactarnos</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600" class="img-fluid rounded" alt="Agencia">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Misión, Visión, Valores -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Nuestros Principios</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">🎯 Misión</h4>
+                            <p class="card-text">Ofrecer experiencias turísticas de calidad que permitan a nuestros clientes descubrir y conectar con la belleza natural y cultural de Jujuy.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">🔭 Visión</h4>
+                            <p class="card-text">Ser la agencia de viajes más confiable y recomendada en Jujuy, reconocida por la excelencia en servicio y la autenticidad de sus tours.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">⭐ Valores</h4>
+                            <p class="card-text">Compromiso, responsabilidad ambiental, respeto a la cultura local, integridad y pasión por ofrecer el mejor servicio.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipo -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Nuestro Equipo</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card text-center">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300" class="card-img-top" alt="Gerente">
+                        <div class="card-body">
+                            <h5 class="card-title">Juan Pérez</h5>
+                            <p class="card-text">Gerente General</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card text-center">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300" class="card-img-top" alt="Guía">
+                        <div class="card-body">
+                            <h5 class="card-title">María López</h5>
+                            <p class="card-text">Guía Turística</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card text-center">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300" class="card-img-top" alt="Guía">
+                        <div class="card-body">
+                            <h5 class="card-title">Carlos Gómez</h5>
+                            <p class="card-text">Guía de Aventura</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card text-center">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300" class="card-img-top" alt="Atención">
+                        <div class="card-body">
+                            <h5 class="card-title">Ana García</h5>
+                            <p class="card-text">Atención al Cliente</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>📍 Contacto</h5>
+                    <p>Dirección: Calle Principal 123, San Salvador de Jujuy</p>
+                    <p>Teléfono: +54 388 123-4567</p>
+                    <p>Email: info@turismojujuy.com</p>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h5>📧 Newsletter</h5>
+                    <form>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Tu email" required>
+                        </div>
+                        <button type="submit" class="btn btn-warning w-100">Suscribirse</button>
+                    </form>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h5>🌐 Redes Sociales</h5>
+                    <p>
+                        <a href="https://facebook.com" class="text-white text-decoration-none">Facebook</a> |
+                        <a href="https://twitter.com" class="text-white text-decoration-none">Twitter</a> |
+                        <a href="https://instagram.com" class="text-white text-decoration-none">Instagram</a>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-12">
+                    <iframe title="Mapa de Jujuy"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0!2d-65.3!3d-24.2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDEyJzAwLjAiUyA2NcKwMTgnMDAuMCJX!5e0!3m2!1ses!2sar!4v1234567890"
+                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        width="100%" height="300"></iframe>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2026 TurismoJujuy. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/animaciones.js"></script>
 </body>
+
 </html>

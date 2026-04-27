@@ -1,0 +1,267 @@
+/* Estilos para la Navbar */
+.navbar {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    padding: 1rem 0;
+}
+
+/* Estilos para el brand */
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff !important;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.08);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Estilos para los enlaces de navegación */
+.navbar-nav .nav-link {
+    color: #fff !important;
+    margin: 0 10px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffd700 !important;
+    transform: translateY(-3px);
+}
+
+.navbar-nav .nav-link.active {
+    color: #ffd700 !important;
+    border-bottom: 3px solid #ffd700;
+    padding-bottom: 5px;
+}
+
+/* Estilos para el icono toggler en dispositivos móviles */
+.navbar-toggler {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    line-height: 1.6;
+}
+
+/* Estilos para el hero */
+.hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+/* Estilos para tarjetas */
+.card {
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 25px;
+}
+
+.card-title {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Estilos para botones */
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    padding: 10px 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.btn-secondary {
+    background-color: #f39c12;
+    border: none;
+    padding: 10px 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #e67e22;
+    transform: scale(1.05);
+}
+
+/* Estilos para secciones */
+.section {
+    padding: 60px 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin: 15px auto 0;
+}
+
+/* Estilos para footer */
+footer {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 50px 0 20px;
+    margin-top: 60px;
+}
+
+footer h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+footer p {
+    margin-bottom: 10px;
+    line-height: 1.8;
+}
+
+footer .form-control,
+footer .form-label {
+    color: white;
+}
+
+footer .form-label {
+    font-weight: 500;
+}
+
+footer .form-control {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+footer .form-control:focus {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: #ffd700;
+    color: white;
+    box-shadow: 0 0 0 0.2rem rgba(255, 215, 0, 0.25);
+}
+
+footer .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+footer iframe {
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+footer .copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 30px;
+}
+
+/* Estilos para testimonios */
+.testimonial {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.testimonial-text {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.testimonial-author {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilos para alertas */
+.alert {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .card-img-top {
+        height: 200px;
+    }
+}
