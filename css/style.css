@@ -265,3 +265,31 @@ footer .copyright {
         height: 200px;
     }
 }
+
+/* Animación de aparición del grid */
+.card {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+    transition: all 0.5s ease;
+}
+
+/* Cuando aparece en pantalla */
+.card.show {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+/* Efecto hover (zoom suave) */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+/* Zoom en imagen */
+.card img {
+    transition: transform 0.5s ease;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
